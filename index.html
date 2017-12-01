@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Crystal Collector</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="col-side"></div>
+    <div class="col">
+
+      <div class="header">
+        <h2>Crystal Collector!</h2>
+      </div>
+      <div class="game-info">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below.
+        By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p>You win your game by matching your total score to the random number.
+        You lose the game if your total score goes above the random number. </p>
+        <p>The value of each crystal is hidden from you until you click on it. </p>
+        <p>Each time the game starts, the game will change the value of each crystal.</p>
+      </div>
+
+      <div class="game">
+        <div class="col-3">
+          <div class="scoreHeader">Target Score</div>
+          <p><div class="targetScore">0</div></p>
+        </div>
+        <div class="col-3">
+          <div class="winsHeader">Wins/Losses</div>
+          <div class="wins">
+            <p><div id="winsNumber">Wins: 0</div></p>
+            <p><div id="lossesNumber">Losses: 0</div></p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="currentHeader">Current Score</div>
+          <p><div class="currentScore">0</div></p>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <div id="amethyst"><img src="assets/images/amethyst.png"></div>
+        <div id="peridot"><img src="assets/images/peridot.png"></div>
+        <div id="quartz"><img src="assets/images/quartz.png"></div>
+        <div id="zircon"><img src="assets/images/zircon.png"></div>
+      </div>
+    </div>
+
+    <div class="col-side"></div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="assets/javascript/crystal-game.js"></script>
+
+</body>
+</html>
