@@ -22,7 +22,7 @@
 }
 .header {
   background: lightblue;
-  background: linear-gradient(-90deg, lightblue, teal, green);
+  background: linear-gradient(-90deg, lightgrey, teal 80%, green);
   padding: 20px;
   margin: 20px;
   height: 20%;
@@ -53,6 +53,9 @@ p {
 .col-3 > p, .wins {
   margin: 20px;
 }
+.wins > p {
+  line-height: 60px;
+}
 .game {
   display: flex;
   justify-content: space-between;
@@ -64,19 +67,25 @@ p {
   background: teal;
   height: 30%;
   padding: 10px;
+  border-bottom: 1px;
+  border-style: solid;
 }
 .currentScore, .targetScore {
-  font-size: 24px;
+  font-size: 30px;
+  margin-top: 20px;
 }
-
+#winsNumber, #lossesNumber {
+  line-height: 16px;
+  margin-top: 5px;
+}
 img:hover {
   animation: bounce 0.7s;
 }
 @keyframes bounce {
     0% { transform: translate(1px, 1px) rotate(0deg);}
-    5% { transform: translate(2px, 1px) rotate(-1deg);}
-    10% { transform: translate(1px, 3px) rotate(0deg);}
-    15% { transform: translate(3px, 1px) rotate(1deg);}
+    10% { transform: translate(2px, 1px) rotate(-1deg);}
+    20% { transform: translate(1px, 3px) rotate(0deg);}
+    30% { transform: translate(3px, 1px) rotate(1deg);}
 }
 img:active {
   animation: fade 0s;
