@@ -18,7 +18,6 @@
 .image-container, .header {
   display: flex;
   justify-content: space-between;
-  margin: 30px;
 }
 .header {
   background: lightblue;
@@ -96,4 +95,44 @@ img:active {
    0% {opacity: 1;}
    80% {opacity: 0.2;}
    90% {opacity: 0.5}
+}
+@media screen and (max-width: 980px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 640px) {
+   .col, .container, .game-info {
+    display: block;
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+    margin: 0px;
+  }
+  .scoreHeader, .winsHeader, .currentHeader {
+    padding: 9px;
+    font-size: 14px;
+  }
+  .game-info {
+    background: white;
+  }
+  p {
+    margin: 10px;
+    line-height: 15px;
+  }
+  .image-container {
+    display: inline;
+    width: 100%
+
+  }
+  .amethyst, .peridot, .quartz, .zircon {
+    margin: 20px;
+    max-width: 100%;
+    height: 128px;
+    display: inline-block;
+  }
+  img {
+    text-align: center;
+  }
 }
